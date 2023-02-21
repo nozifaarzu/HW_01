@@ -9,8 +9,6 @@
         <module name="hw-01" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="HW_01" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
