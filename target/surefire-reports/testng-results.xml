@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="21567" started-at="2023-02-26T12:22:36 EST" finished-at="2023-02-26T12:22:57 EST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@305fd85d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="21567" started-at="2023-02-26T12:22:36 EST" finished-at="2023-02-26T12:22:57 EST">
+      <class name="TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@305fd85d]" name="setUpClass" is-config="true" duration-ms="282" started-at="2023-02-26T12:22:36 EST" finished-at="2023-02-26T12:22:36 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@305fd85d]" name="runScenario" duration-ms="7149" started-at="2023-02-26T12:22:36 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-26T12:22:43 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user should be able to login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@305fd85d]" name="runScenario" duration-ms="3523" started-at="2023-02-26T12:22:43 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-26T12:22:47 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not be able to login with valid email and invalid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@305fd85d]" name="runScenario" duration-ms="3439" started-at="2023-02-26T12:22:47 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-26T12:22:50 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not be able to login with invalid email and valid password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@305fd85d]" name="runScenario" duration-ms="3594" started-at="2023-02-26T12:22:50 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-26T12:22:54 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should not be able to login with invalid email and  password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Login Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@305fd85d]" name="runScenario" duration-ms="3345" started-at="2023-02-26T12:22:54 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-26T12:22:57 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["user should be able to create a brand new account with unique email address"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Signup Feature]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@305fd85d]" name="tearDownClass" is-config="true" duration-ms="196" started-at="2023-02-26T12:22:57 EST" finished-at="2023-02-26T12:22:57 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
