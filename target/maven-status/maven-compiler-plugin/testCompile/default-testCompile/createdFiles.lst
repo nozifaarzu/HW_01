@@ -1,5 +1,5 @@
 stepDef\Hook.class
 stepDef\LoginSteps.class
-TestRunner.class
 base\Config.class
 base\test.class
+TestRunner.class
