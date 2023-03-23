@@ -10,7 +10,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
 <link rel="stylesheet" href="css/font-awesome.min.css"/>
 <link rel="shortcut icon" href="images/favicon.png"/>
 
@@ -40,7 +40,6 @@ $(document).ready(function() {
 
 
 
-
   
 <title>Cucumber-JVM Reports  - Features Overview</title>
 
@@ -51,8 +50,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                4,
-                1,
+                12,
+                0,
                 0,
                 0,
                 0
@@ -74,15 +73,15 @@ $(document).ready(function() {
         ]
     };
 
-    var ctx = document.getElementById("steps-chart");
-    window.myBar = new Chart(ctx, {
-        type: 'doughnut',
+    var context = document.getElementById("steps-chart");
+    window.myBar = new Chart(context, {
+        type: "doughnut",
         data: chartData,
         options: {
             title: {
                 display: true,
                 fontSize: 20,
-                text: 'Steps'
+                text: "Steps"
             },
             responsive: true,
             legend: {
@@ -94,8 +93,8 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
-                        return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
+                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
             }
@@ -107,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                1
+                1,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -121,15 +120,15 @@ $(document).ready(function() {
         ]
     };
 
-    var ctx = document.getElementById("scenarios-chart");
-    window.myBar = new Chart(ctx, {
-        type: 'doughnut',
+    var context = document.getElementById("scenarios-chart");
+    window.myBar = new Chart(context, {
+        type: "doughnut",
         data: chartData,
         options: {
             title: {
                 display: true,
                 fontSize: 20,
-                text: 'Scenarios'
+                text: "Scenarios"
             },
             circumference: Math.PI,
             rotation: Math.PI,
@@ -145,7 +144,7 @@ $(document).ready(function() {
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
                         var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
-                        return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
+                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
             }
@@ -157,8 +156,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -171,15 +170,15 @@ $(document).ready(function() {
         ]
     };
 
-    var ctx = document.getElementById("features-chart");
-    window.myBar = new Chart(ctx, {
-        type: 'pie',
+    var context = document.getElementById("features-chart");
+    window.myBar = new Chart(context, {
+        type: "pie",
         data: chartData,
         options: {
             title: {
                 display: true,
                 fontSize: 20,
-                text: 'Features'
+                text: "Features"
             },
             responsive: true,
             legend: {
@@ -192,7 +191,7 @@ $(document).ready(function() {
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
                         var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
-                        return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
+                        return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
             }
@@ -209,14 +208,15 @@ $(document).ready(function() {
     <div class="collapse navbar-collapse">
       <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
       <ul class="nav navbar-nav navbar-right">
-                <li role="presentation"  class="active" ><a href="feature-overview.html">Features</a></li>
-        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
-        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
-        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+                <li role="presentation"  class="active" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <div class="container-fluid" id="build-info">
   <div class="row">
@@ -231,9 +231,9 @@ $(document).ready(function() {
         </thead>
         <tbody>
           <tr class="info">
-            <td>hw-01</td>
+            <td>HW_01</td>
                           <td>1</td>
-                        <td>10 Mar 2023, 22:09</td>
+                        <td>23 Mar 2023, 03:08</td>
           </tr>
         </tbody>
       </table>
@@ -241,7 +241,8 @@ $(document).ready(function() {
   </div>
 </div>
 
-<div id="report-lead" class="container-fluid>
+
+<div id="report-lead" class="container-fluid">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <h2>Features Statistics</h2>
@@ -296,82 +297,90 @@ $(document).ready(function() {
 <div class="container-fluid" id="summary">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-              
+      
 <table id="tablesorter" class="stats-table table-hover">
-  <thead>
+  
+<thead>
   <tr class="header dont-sort">
         <th></th>
-    <th colspan="3">Scenarios</th>
     <th colspan="6">Steps</th>
-    <th colspan="2">Totals</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
   </tr>
   <tr>
     <th>Feature</th>
         <th class="passed">Passed</th>
     <th class="failed">Failed</th>
-    <th class="total">Total</th>
-    <th class="passed">Passed</th>
-    <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
     <th class="pending">Pending</th>
     <th class="undefined">Undefined</th>
     <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
     <th>Duration</th>
     <th>Status</th>
   </tr>
 </thead>
 
+
   <tbody>
           <tr>
-        <td class="tagname"><a href="file-src-test-java-features-login-feature.html">Login Feature</a></td>
+        <td class="tagname"><a href="report-feature_file-src-test-java-features-signup-feature.html">Signup Feature</a></td>
         
+        <td      class="passed"    >12</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">12</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
         <td class="total">1</td>
-        <td      class="passed"    >4</td>
-        <td      class="failed"    >1</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">5</td>
-        <td class="duration" data-value="326000000">326ms</td>
-        <td class="failed">Failed</td>
+
+        <td class="duration" data-value="1482070300">1s 482ms</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td>1</td>
-            <td>0</td>
-      <td>1</td>
-      <td>1</td>
-      <td>4</td>
-      <td>1</td>
+            <td>12</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>5</td>
-      <td class="duration">326ms</td>
+      <td>0</td>
+      <td>12</td>
+
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+
+      <td class="duration">1s 482ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>0.00%</td>
-      <td>100.00%</td>
-      <td></td>
-      <td>80.00%</td>
-      <td>20.00%</td>
+            <td>100.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
-      <td></td>
+      <td>0.00%</td>
       <td></td>
       <td>100.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>
 
-          </div>
+    </div>
   </div>
 </div>
 

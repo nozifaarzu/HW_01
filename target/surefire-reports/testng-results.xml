@@ -1,53 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="6370" started-at="2023-03-10T22:08:53 EST" finished-at="2023-03-10T22:08:59 EST">
+  <suite started-at="2023-03-23T03:07:53 EDT" name="Surefire suite" finished-at="2023-03-23T03:07:58 EDT" duration-ms="5456">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@458c1321]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@78e117e3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Surefire test" duration-ms="6370" started-at="2023-03-10T22:08:53 EST" finished-at="2023-03-10T22:08:59 EST">
+    <test started-at="2023-03-23T03:07:53 EDT" name="Surefire test" finished-at="2023-03-23T03:07:58 EDT" duration-ms="5456">
       <class name="TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner@458c1321]" name="setUpClass" is-config="true" duration-ms="285" started-at="2023-03-10T22:08:53 EST" finished-at="2023-03-10T22:08:53 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@458c1321]" name="runScenario" duration-ms="5952" started-at="2023-03-10T22:08:53 EST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-10T22:08:59 EST">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner@78e117e3]" started-at="2023-03-23T03:07:53 EDT" name="setUpClass" finished-at="2023-03-23T03:07:53 EDT" duration-ms="193" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["user should be able to login with valid credentials"]]>
+                <![CDATA[org.testng.TestRunner@6069db50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@78e117e3]" started-at="2023-03-23T03:07:53 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-03-23T03:07:58 EDT" duration-ms="5041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be able to create a brand new account with unique email address"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login Feature]"]]>
+                <![CDATA["Signup Feature"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Update Profile] but found [Sign In]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Update Profile] but found [Sign In]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at stepDef.LoginSteps.userShouldBeAbleToLogInSuccessfully(LoginSteps.java:43)
-at ✽.user should be able to log in successfully(file:///C:/Users/anozi/Documents/Automation-Hasan/HW_01/src/test/java/features/login.feature:9)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner@458c1321]" name="tearDownClass" is-config="true" duration-ms="98" started-at="2023-03-10T22:08:59 EST" finished-at="2023-03-10T22:08:59 EST">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@78e117e3]" started-at="2023-03-23T03:07:58 EDT" name="tearDownClass" finished-at="2023-03-23T03:07:58 EDT" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

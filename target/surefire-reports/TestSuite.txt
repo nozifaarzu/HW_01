@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.77 s <<< FAILURE! - in TestSuite
-TestRunner.runScenario["user should be able to login with valid credentials", "Optional[Login Feature]"](1)  Time elapsed: 5.982 s  <<< FAILURE!
-java.lang.AssertionError: expected [Update Profile] but found [Sign In]
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.844 s - in TestSuite

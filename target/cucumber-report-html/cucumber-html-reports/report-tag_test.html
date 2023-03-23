@@ -10,7 +10,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
 <link rel="stylesheet" href="css/font-awesome.min.css"/>
 <link rel="shortcut icon" href="images/favicon.png"/>
 
@@ -40,9 +40,8 @@ $(document).ready(function() {
 
 
 
-
   
-<title>Cucumber-JVM Reports  - Feature: Signup Feature</title>
+<title>Cucumber-JVM Reports  - Tag: @test</title>
 
 </head>
 <body>
@@ -52,14 +51,15 @@ $(document).ready(function() {
     <div class="collapse navbar-collapse">
       <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
       <ul class="nav navbar-nav navbar-right">
-                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
-        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
-        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
-        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <div class="container-fluid" id="build-info">
   <div class="row">
@@ -74,9 +74,9 @@ $(document).ready(function() {
         </thead>
         <tbody>
           <tr class="info">
-            <td>hw-01</td>
+            <td>HW_01</td>
                           <td>1</td>
-                        <td>20 Feb 2023, 20:51</td>
+                        <td>23 Mar 2023, 03:08</td>
           </tr>
         </tbody>
       </table>
@@ -84,55 +84,63 @@ $(document).ready(function() {
   </div>
 </div>
 
-<div id="report-lead" class="container-fluid>
+
+<div id="report-lead" class="container-fluid">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h2>Feature Report</h2>
+      <h2>Tag Report</h2>
           </div>
   </div>
 </div>
+
 
 <div class="container-fluid" id="summary">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <table class="stats-table">
 
-        <thead>
+        
+<thead>
   <tr class="header dont-sort">
         <th></th>
-    <th colspan="3">Scenarios</th>
     <th colspan="6">Steps</th>
-    <th colspan="2">Totals</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Feature</th>
+    <th>Tag</th>
         <th class="passed">Passed</th>
-    <th class="failed">Failed</th>
-    <th class="total">Total</th>
-    <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
     <th class="pending">Pending</th>
     <th class="undefined">Undefined</th>
     <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
     <th>Duration</th>
     <th>Status</th>
   </tr>
 </thead>
 
+
         <tbody>
         <tr>
-          <td class="tagname">Signup Feature</td>
-                    <td  class="passed"    >1</td>
+          <td class="tagname">@test</td>
+                    <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
-          <td      class="passed"    >1</td>
-          <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">1</td>
-          <td class="duration" data-value="0">000ms</td>
+
+          <td class="duration" data-value="1482070300">1s 482ms</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -147,31 +155,17 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="feature">
-        
-<div class="tags indention">
-  </div>
+      <div class="elements">
 
-        
-<div class="brief passed">
-  <span class="keyword indention">Feature</span>
-  <span class="name">Signup Feature</span>
-  
-
-  </div>
-
-        <div class="description indention"></div>
-
-        <div class="elements inner-level">
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <a href="report-feature_file-src-test-java-features-signup-feature.html">View Feature</a> <i>Signup Feature</i>
+    </div>
   
   
 <div class="tags indention">
-       <a href="regression.html">@regression</a>
-       <a href="smoke.html">@smoke</a>
-       <a href="sanity.html">@sanity</a>
-       <a href="hb.html">@hb</a>
+       <a href="report-tag_test.html">@test</a>
   </div>
 
 
@@ -179,7 +173,7 @@ $(document).ready(function() {
     
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">user should be able to create a brand new account with unique email address</span>
+  <span class="name">User should be able to create a brand new account with unique email address</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -207,9 +201,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">stepDef.Hook.beforeTest()</span>
+                          <span class="location name">stepDef.Hook.beforeEachTest()</span>
                         
-  <span class="lead-duration duration">4s 585ms</span>
+  <span class="lead-duration duration">3s 470ms</span>
 
           </div>
 
@@ -242,9 +236,240 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user in TalentTek homepage</span>
+  <span class="name">user in TalentTEK Homepage</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">031ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user clicks on "Create new account" button</span>
+  
+  <span class="lead-duration duration">270ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters First and Last Name</span>
+  
+  <span class="lead-duration duration">306ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter their valid email address</span>
+  
+  <span class="lead-duration duration">092ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter Password and confirm password</span>
+  
+  <span class="lead-duration duration">127ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter "Oct" under Birth month</span>
+  
+  <span class="lead-duration duration">107ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter "1" under Birth date</span>
+  
+  <span class="lead-duration duration">079ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter "1996" under Birth year</span>
+  
+  <span class="lead-duration duration">101ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter their gender as "female"</span>
+  
+  <span class="lead-duration duration">046ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user agrees on terms and condition checkbox</span>
+  
+  <span class="lead-duration duration">045ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">user clicks on Create my account button</span>
+  
+  <span class="lead-duration duration">042ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should be able to get their studentId</span>
+  
+  <span class="lead-duration duration">230ms</span>
 
   </div>
 
@@ -281,9 +506,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">stepDef.Hook.afterEachTest()</span>
+                          <span class="location name">stepDef.Hook.afterEachTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">624ms</span>
+  <span class="lead-duration duration">001ms</span>
 
           </div>
 
@@ -299,8 +524,7 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  </div>
-
+        
       </div>
     </div>
   </div>

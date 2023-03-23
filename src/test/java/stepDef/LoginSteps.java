@@ -11,7 +11,7 @@ import pageObject.login_page;
 
 public class LoginSteps extends Config {
     login_page lp = new login_page(driver);
-    @Given("user in TalentTek homepage")
+    @Given("user in TalentTEK Homepage")
     public void userInTalentTEKHomepage() {
         // verify page title
         String act = driver.getTitle();
@@ -30,30 +30,48 @@ public class LoginSteps extends Config {
         lp.enterPassword(Password);
     }
 
+
     @When("user clicks on Log In button")
     public void userClicksOnLogInButton() {
         lp.clickOnLoginButton();
     }
 
-    @Then("user should be able to log in successfully")
-    public void userShouldBeAbleToLogInSuccessfully() {
-        // verify page title
-        String act = driver.getTitle();
-        String exp = "Update Profile";
-        Assert.assertEquals(act, exp);
+    @Then("user should be able to successfully login")
+    public void userShouldBeAbleToSuccessfullyLogin() {
+        lp.verifyIfStudentLoggedInSuccessfully();
     }
 
     @And("user enter invalid password")
     public void userEnterInvalidPassword() {
-        
+        lp.enterPassword("fakeInvalidPass1");
     }
 
-    @Then("user should be able to see {string}")
-    public void userShouldBeAbleToSee(String arg0) {
-        
+    @Then("user should be able see error message")
+    public void userShouldBeAbleSee(String errorMessage) {
+        lp.verifyErrorMessageForInvalidEmailOrPassword(errorMessage);
+    }
+
+    @Then("user should be able see {string} message")
+    public void userShouldBeAbleSeeMessage(String errorMsg) {
+        lp.verifyErrorMessageForInvalidEmailOrPassword(errorMsg);
     }
 
     @And("user enter invalid email address")
     public void userEnterInvalidEmailAddress() {
+        lp.enterEmailAddress("fakeemail5783@gmail.com");
     }
+
+    @And("login")
+    public void login() {
+        lp.enterEmailAddress(Email_Address);
+        lp.enterPassword(Password);
+        lp.clickOnLoginButton();
+    }
+
+    @And("user clicks on {string} button")
+    public void userClicksOnButton(String buttonText) {
+        driver.findElement(By.xpath("//a[contains(text(),'"+buttonText+"')]")).click();
+        //lp.clickOnCreateButton();
+    }
+
 }

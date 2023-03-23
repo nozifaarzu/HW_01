@@ -10,7 +10,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
-<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
 <link rel="stylesheet" href="css/font-awesome.min.css"/>
 <link rel="shortcut icon" href="images/favicon.png"/>
 
@@ -40,9 +40,8 @@ $(document).ready(function() {
 
 
 
-
   
-<title>Cucumber-JVM Reports  - Feature: Login Feature</title>
+<title>Cucumber-JVM Reports  - Feature: Signup Feature</title>
 
 </head>
 <body>
@@ -52,14 +51,15 @@ $(document).ready(function() {
     <div class="collapse navbar-collapse">
       <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
       <ul class="nav navbar-nav navbar-right">
-                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
-        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
-        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
-        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <div class="container-fluid" id="build-info">
   <div class="row">
@@ -74,9 +74,9 @@ $(document).ready(function() {
         </thead>
         <tbody>
           <tr class="info">
-            <td>hw-01</td>
+            <td>HW_01</td>
                           <td>1</td>
-                        <td>10 Mar 2023, 22:09</td>
+                        <td>23 Mar 2023, 03:08</td>
           </tr>
         </tbody>
       </table>
@@ -84,7 +84,8 @@ $(document).ready(function() {
   </div>
 </div>
 
-<div id="report-lead" class="container-fluid>
+
+<div id="report-lead" class="container-fluid">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <h2>Feature Report</h2>
@@ -92,48 +93,55 @@ $(document).ready(function() {
   </div>
 </div>
 
+
 <div class="container-fluid" id="summary">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <table class="stats-table">
 
-        <thead>
+        
+<thead>
   <tr class="header dont-sort">
         <th></th>
-    <th colspan="3">Scenarios</th>
     <th colspan="6">Steps</th>
-    <th colspan="2">Totals</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
   </tr>
   <tr>
     <th>Feature</th>
         <th class="passed">Passed</th>
     <th class="failed">Failed</th>
-    <th class="total">Total</th>
-    <th class="passed">Passed</th>
-    <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
     <th class="pending">Pending</th>
     <th class="undefined">Undefined</th>
     <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
     <th>Duration</th>
     <th>Status</th>
   </tr>
 </thead>
 
+
         <tbody>
         <tr>
-          <td class="tagname">Login Feature</td>
-                    <td >0</td>
-          <td  class="failed"    >1</td>
+          <td class="tagname">Signup Feature</td>
+                    <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
           <td class="total">1</td>
-          <td      class="passed"    >4</td>
-          <td      class="failed"    >1</td>
-          <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">5</td>
-          <td class="duration" data-value="326000000">326ms</td>
-          <td class="failed">Failed</td>
+
+          <td class="duration" data-value="1482070300">1s 482ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -153,9 +161,9 @@ $(document).ready(function() {
   </div>
 
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
-  <span class="name">Login Feature</span>
+  <span class="name">Signup Feature</span>
   
 
   </div>
@@ -168,15 +176,15 @@ $(document).ready(function() {
   
   
 <div class="tags indention">
-       <a href="smoke.html">@smoke</a>
+       <a href="report-tag_test.html">@test</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">user should be able to login with valid credentials</span>
+  <span class="name">User should be able to create a brand new account with unique email address</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -185,7 +193,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -206,7 +214,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.beforeEachTest()</span>
                         
-  <span class="lead-duration duration">5s 468ms</span>
+  <span class="lead-duration duration">3s 470ms</span>
 
           </div>
 
@@ -222,9 +230,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -234,14 +242,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user in TalentTek homepage</span>
+  <span class="name">user in TalentTEK Homepage</span>
   
-  <span class="lead-duration duration">061ms</span>
+  <span class="lead-duration duration">031ms</span>
 
   </div>
 
@@ -260,9 +268,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user enter valid email address</span>
+  <span class="name">user clicks on "Create new account" button</span>
   
-  <span class="lead-duration duration">133ms</span>
+  <span class="lead-duration duration">270ms</span>
 
   </div>
 
@@ -281,9 +289,156 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user enter valid password</span>
+  <span class="name">user enters First and Last Name</span>
   
-  <span class="lead-duration duration">072ms</span>
+  <span class="lead-duration duration">306ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter their valid email address</span>
+  
+  <span class="lead-duration duration">092ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter Password and confirm password</span>
+  
+  <span class="lead-duration duration">127ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter "Oct" under Birth month</span>
+  
+  <span class="lead-duration duration">107ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter "1" under Birth date</span>
+  
+  <span class="lead-duration duration">079ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter "1996" under Birth year</span>
+  
+  <span class="lead-duration duration">101ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enter their gender as "female"</span>
+  
+  <span class="lead-duration duration">046ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user agrees on terms and condition checkbox</span>
+  
+  <span class="lead-duration duration">045ms</span>
 
   </div>
 
@@ -302,9 +457,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">When</span>
-  <span class="name">user clicks on Log In button</span>
+  <span class="name">user clicks on Create my account button</span>
   
-  <span class="lead-duration duration">055ms</span>
+  <span class="lead-duration duration">042ms</span>
 
   </div>
 
@@ -321,35 +476,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
-  <span class="name">user should be able to log in successfully</span>
+  <span class="name">user should be able to get their studentId</span>
   
-  <span class="lead-duration duration">005ms</span>
+  <span class="lead-duration duration">230ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.AssertionError: expected [Update Profile] but found [Sign In]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at stepDef.LoginSteps.userShouldBeAbleToLogInSuccessfully(LoginSteps.java:43)
-	at ✽.user should be able to log in successfully(file:///C:/Users/anozi/Documents/Automation-Hasan/HW_01/src/test/java/features/login.feature:9)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -366,7 +501,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -378,13 +513,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">stepDef.Hook.afterEachTest()</span>
+                          <span class="location name">stepDef.Hook.afterEachTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">001ms</span>
 
           </div>
 
